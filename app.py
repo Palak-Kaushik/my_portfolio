@@ -476,7 +476,7 @@ contact_form = """
     }
 </style>
 <div class="form-container">
-    <form action="https://formsubmit.co/mailboxpalak@gmail.com" method="POST">
+    <form action="https://formsubmit.co/d527885a16d5a4293c47f66b7b4e3428" method="POST">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
