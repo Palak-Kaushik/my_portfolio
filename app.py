@@ -5,6 +5,7 @@ st.set_page_config(page_title="Palak Kaushik | ML Developer")
 
 
 st.title("Palak Kaushik")
+st.write("B.E. CSE (Hons AI ML) | Machine Learning Engineer | Natural Language Processing (NLP)")
 st.markdown('###')
 # Layout with columns
 col1, col2 = st.columns([1, 2])  # Adjust column ratio as needed
@@ -13,32 +14,64 @@ col1, col2 = st.columns([1, 2])  # Adjust column ratio as needed
 with col1:
     st.image(
     r"./assets/profile_photo.jpeg",
-    width=200,  # Keep this in sync with your desired display size
+    #use_container_width=True,  # Keep this in sync with your desired display size
 )
 
 
 # Right column: Information
 with col2:
-    st.write("B.E. CSE (Hons AI ML) | Machine Learning Engineer | Natural Language Processing (NLP)")
-    st.markdown(
-        """
-        - **Email**: [mailboxpalak@gmail.com](mailto:mailboxpalak@gmail.com)
-        - **GitHub**: [github.com/Palak-Kaushik](https://github.com/Palak-Kaushik)
-        - **LinkedIn**: [linkedin.com/in/kaushik-palak](https://linkedin.com/in/kaushik-palak)
-        - **Phone**: +91 9811097963
-        """
-    )
+
+    st.write("I’m pursuing my Bachelor of Engineering in CSE with specialization in AI and ML. I like to keep up with the latest trends in technology and have a strong appetite for knowledge. I am a good team player and my goal is to leverage AI to solve real-world challenges, specifically in the field of healthcare and defence.")
+    
+    st.markdown("""
+    <style>
+    .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+</style>
+<div class="links">
+    <div class="link">
+        <span>mailboxpalak@gmail.com</span>
+    </div>
+    <div class="link">
+        <span><a href="https://linkedin.com/in/kaushik-palak">Linkedin</a></span>
+    </div>
+    <div class="link">
+        <span><a href="https://github.com/Palak-Kaushik">GitHub</a></span>
+    </div>
+    
+    """, unsafe_allow_html=True)
+    # st.markdown(
+    #     """
+    #     - **Email**: [mailboxpalak@gmail.com](mailto:mailboxpalak@gmail.com)
+    #     - **GitHub**: [github.com/Palak-Kaushik](https://github.com/Palak-Kaushik)
+    #     - **LinkedIn**: [linkedin.com/in/kaushik-palak](https://linkedin.com/in/kaushik-palak)
+    #     - **Phone**: +91 9811097963
+    #     """
+    # )
 
 
 ###########################################################33
 
 
-# About Me Section
-st.header("About Me")
-st.write("""
-I’m pursuing my Bachelor of Engineering in CSE with specialization in AI and ML. I like to keep up with the latest trends in technology and have a strong appetite for knowledge. I am a good team player and my goal is to leverage AI to solve real-world challenges, specifically in the field of healthcare and defence.
+# # About Me Section
+# st.header("About Me")
+# st.write("""
+# I’m pursuing my Bachelor of Engineering in CSE with specialization in AI and ML. I like to keep up with the latest trends in technology and have a strong appetite for knowledge. I am a good team player and my goal is to leverage AI to solve real-world challenges, specifically in the field of healthcare and defence.
 
-""")
+# """)
 
 #############################################################3
 
@@ -61,9 +94,7 @@ st.sidebar.markdown("""
         color: inherit;
     }
 </style>
-[Profile](#palak-kaushik)
-
-[About Me](#about-me)
+[About Me](#palak-kaushik)
 
 [Skills](#skills)
 
@@ -77,10 +108,6 @@ st.sidebar.markdown("""
 
 [Contact Me](#contact-me)
 """, unsafe_allow_html=True)
-
-
-
-st.write("Machine Learning, Natural Language Processing, Computer Vision, Neural Networks")
 
 # HTML for Tech Stack with Icons
 st.markdown("""
@@ -105,6 +132,18 @@ st.markdown("""
 }
 </style>
 <div class="tech-stack">
+    <div class="tech-item">
+        <span>Machine Learning</span>
+    </div>
+    <div class="tech-item">
+        <span>Natural Language Processing</span>
+    </div>
+    <div class="tech-item">
+        <span>Computer Vision</span>
+    </div>
+    <div class="tech-item">
+        <span>Neural Networks</span>
+    </div>
     <div class="tech-item">
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg">
         <span>Sci-Kit Learn</span>
@@ -160,6 +199,10 @@ st.markdown("""
     <div class="tech-item">
         <img src="https://archive.org/download/github.com-gradio-app-gradio_-_2022-10-06_12-54-59/cover.jpg" alt="Jupyter">
         <span>Gradio</span>
+    </div>
+    <div class="tech-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Streamlit-logo-primary-colormark-darktext.png" alt="Jupyter">
+        <span>Streamlit</span>
     </div>
     <div class="tech-item">
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Git_format.png" alt="Node.js">
@@ -345,7 +388,7 @@ st.markdown(
         margin-top: 5px;
         margin-left: 20px;
         font-size: 1rem;
-        color: #7f8c8d;
+        color: #00008B;
     }
 
     .achievement-image {
@@ -353,6 +396,8 @@ st.markdown(
         margin-right: 15px;
         vertical-align: middle;
     }
+
+    
     </style>
     """,
     unsafe_allow_html=True,
@@ -369,6 +414,14 @@ st.markdown(
         <div class="achievement-title">IEEE CIS Flame Technical Challenge Runner-Up</div>
         <div class="achievement-description">
             My team, VYAKRITI 2.0 secured fourth position globally by optimizing LLMs to reduce computational time and space complexity by 95% while preserving response quality.
+        </div>
+        <div class="links">
+        <div class="link">
+        <a href="https://cis.ieee.org/activities/educational-activites/competitions/flame-technical-challenge-2024-final-submissions"> Finalists
+        </div>
+        <div class="link">
+        <a href="https://youtu.be/Op2wBcxx0TA"> Video
+        </div>
         </div>
         
     </div>
@@ -391,6 +444,18 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+
+col1, col2 = st.columns(2)
+# Display images in each column
+with col1:
+    st.image("./assets/sih24_1.jpeg",)# use_container_width=True)
+
+with col2:
+    st.image("./assets/sih24_3.jpeg",)# use_container_width=True)
+
+with col1:
+    st.image("./assets/sih24_2.jpeg",)# use_container_width=True)
 
 # Achievement 3
 st.markdown(
@@ -419,7 +484,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
+st.image("./assets/ichack.png")
 
 
 ################################################
