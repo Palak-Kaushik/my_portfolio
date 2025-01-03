@@ -482,6 +482,7 @@ contact_form = """
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit">Send Message</button>
+    </form>
 
 </div>
 """
